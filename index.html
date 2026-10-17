@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>بن الخليفه | مصنع وكافيه لبن</title>
+<meta name="description" content="بن الخليفه - مصنع وكافيه لبن. لبن طازج وأجبان بلدية وقهوة باللبن. شاطئ أبو يوسف، العجمي البحري، الدخيلة، الإسكندرية 3QV3+7F9">
+<meta name="theme-color" content="#2b1a10">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@300;400;500;700;800;900&family=Amiri:wght@700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- ===== SVG: وجه شيخ بلحية + غترة وعقال سعودي ===== -->
+<svg class="sprite" aria-hidden="true" focusable="false">
+  <symbol id="sheikh" viewBox="0 0 200 260">
+    <!-- الكتف / الثوب -->
+    <path d="M28 260c0-50 32-72 72-72s72 22 72 72z" fill="#ece2d0" stroke="#2b1a10" stroke-width="5" stroke-linejoin="round"/>
+    <path d="M92 176h16v26H92z" fill="#dcae7d" stroke="#2b1a10" stroke-width="4"/>
+    <path d="M92 196l8 10 8-10" fill="none" stroke="#2b1a10" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+    <!-- أطراف الغترة النازلة على الكتف -->
+    <path d="M52 96c-2 38-8 76-14 108l26 12 16-52-8-70z" fill="#fbf7ee" stroke="#2b1a10" stroke-width="4" stroke-linejoin="round"/>
+    <path d="M148 96c2 38 8 76 14 108l-26 12-16-52 8-70z" fill="#fbf7ee" stroke="#2b1a10" stroke-width="4" stroke-linejoin="round"/>
+    <!-- الوجه -->
+    <ellipse cx="100" cy="112" rx="33" ry="43" fill="#e8c39a" stroke="#2b1a10" stroke-width="4"/>
+    <!-- اللحية الكثيفة -->
+    <path d="M65 108c0 44 15 76 35 80 20-4 35-36 35-80l-9 14c-1 26-11 50-26 52-15-2-25-26-26-52z" fill="#2b1a10" stroke="#17100a" stroke-width="3" stroke-linejoin="round"/>
+    <!-- شارب + فم -->
+    <path d="M82 138c5-6 12-6 18-2 6-4 13-4 18 2-4 6-11 8-18 5-7 3-14 1-18-5z" fill="#3a2415"/>
+    <path d="M93 145c2 2 12 2 14 0" fill="none" stroke="#c99a6f" stroke-width="2" stroke-linecap="round"/>
+    <!-- عيون وحواجب -->
+    <path d="M76 92c4-4 10-4 14 0" fill="none" stroke="#2b1a10" stroke-width="3.5" stroke-linecap="round"/>
+    <path d="M110 92c4-4 10-4 14 0" fill="none" stroke="#2b1a10" stroke-width="3.5" stroke-linecap="round"/>
+    <ellipse cx="83" cy="103" rx="3.8" ry="5.2" fill="#2b1a10"/>
+    <ellipse cx="117" cy="103" rx="3.8" ry="5.2" fill="#2b1a10"/>
+    <circle cx="84" cy="101.5" r="1.1" fill="#fff"/>
+    <circle cx="118" cy="101.5" r="1.1" fill="#fff"/>
+    <path d="M100 98v9c0 3-2 5-5.5 5.5" fill="none" stroke="#b98a5a" stroke-width="2.8" stroke-linecap="round"/>
+    <!-- الغترة البيضاء (الطاقية السعودية) -->
+    <path d="M38 98C38 42 64 10 100 10s62 32 62 88l-12 2C148 55 126 28 100 28S52 55 50 100z" fill="#fdfbf5" stroke="#2b1a10" stroke-width="4.5" stroke-linejoin="round"/>
+    <path d="M58 62c6-20 22-32 42-32" fill="none" stroke="#e2d7c2" stroke-width="3" stroke-linecap="round"/>
+    <path d="M100 28v-8" fill="none" stroke="#2b1a10" stroke-width="3" stroke-linecap="round"/>
+    <!-- العقال الأسود المزدوج -->
+    <path d="M52 72C56 40 76 24 100 24s44 16 48 48" fill="none" stroke="#141414" stroke-width="11" stroke-linecap="round"/>
+    <path d="M60 74C63 48 79 33 100 33s37 15 40 41" fill="none" stroke="#2e2e2e" stroke-width="5" stroke-linecap="round"/>
+  </symbol>
+</svg>
+
+<!-- ===== بوابة اختيار الدور ===== -->
+<div class="gate" id="roleGate">
+  <div class="gate-card">
+    <div class="gate-logo"><svg viewBox="0 0 200 260"><use href="#sheikh"/></svg></div>
+    <span class="kicker">مصنع وكافيه لبن • منذ ١٩٩٨</span>
+    <h1>بن <em>الخليفه</em></h1>
+    <p class="gate-sub">لبن طازج • أجبان بلدية • قهوة باللبن<br>شاطئ أبو يوسف، العجمي البحري، الدخيلة، الإسكندرية<br><b dir="ltr">3QV3+7F9</b></p>
+    <div class="gate-roles">
+      <button class="role-card buyer" id="enterBuyer">
+        <span class="role-emoji">🛒</span>
+        <strong>دخول كمشتري</strong>
+        <span>شوف المنيو والمنتجات واطلب بس</span>
+      </button>
+      <button class="role-card staff" id="enterStaff">
+        <span class="role-emoji">🛠️</span>
+        <strong>دخول كموظف / مدير</strong>
+        <span>زود صنف • ضيف قهوة جديدة • عدّل الأسعار</span>
+      </button>
+    </div>
+    <p class="gate-hint">وضع المشتري للعرض فقط • وضع الموظف بكلمة سر ويتحكم في الموقع من الداخل</p>
+  </div>
+</div>
+
+<!-- ===== نافذة كلمة سر الموظف ===== -->
+<div class="overlay" id="passOverlay" hidden>
+  <div class="modal">
+    <button class="x" data-close="passOverlay">✕</button>
+    <h3>دخول الموظفين</h3>
+    <p class="muted">اكتب كلمة سر الإدارة (تجريبية: <b dir="ltr">1234</b>)</p>
+    <input type="password" id="passInput" inputmode="numeric" placeholder="كلمة السر" autocomplete="off">
+    <p class="err-msg" id="passErr"></p>
+    <button class="btn btn-primary btn-block" id="passGo">دخول لوحة المدير</button>
+    <button class="btn btn-ghost btn-block" data-close="passOverlay">رجوع</button>
+  </div>
+</div>
+
+<!-- ===== شريط المدير ===== -->
+<div class="adminbar" id="adminBar" hidden>
+  <span class="admin-pill">🛠️ وضع المدير نشط — أنت تتحكم في الموقع</span>
+  <div class="admin-btns">
+    <button class="abtn" id="addProductBtn">+ منتج</button>
+    <button class="abtn" id="addCoffeeBtn">+ قهوة / صنف كافيه</button>
+    <button class="abtn ghost" id="resetBtn">↩ استعادة الافتراضي</button>
+    <button class="abtn ghost" id="changePassBtn">🔑 تغيير كلمة السر</button>
+    <button class="abtn warm" id="exitAdminBtn">خروج لوضع المشتري</button>
+  </div>
+</div>
+
+<header class="header" id="header">
+  <div class="container nav">
+    <a href="#home" class="logo">
+      <span class="logo-mark"><svg viewBox="0 0 200 260"><use href="#sheikh"/></svg></span>
+      <span class="logo-text">بن الخليفه<small>مصنع وكافيه لبن</small></span>
+    </a>
+    <nav class="menu" id="menu">
+      <a href="#home" class="active">الرئيسية</a>
+      <a href="#about">من نحن</a>
+      <a href="#products">المنتجات</a>
+      <a href="#cafe">الكافيه</a>
+      <a href="#contact">تواصل معنا</a>
+    </nav>
+    <div class="nav-actions">
+      <button class="btn btn-ghost btn-sm" id="roleSwitch">تبديل الوضع</button>
+      <a href="tel:+201125138138" class="btn btn-wood btn-sm">اطلب الآن</a>
+      <button class="burger" id="burger" aria-label="القائمة"><span></span><span></span><span></span></button>
+    </div>
+  </div>
+</header>
+
+<main>
+<section class="hero" id="home">
+  <div class="hero-bg"><span class="blob b1"></span><span class="blob b2"></span></div>
+  <div class="container hero-inner">
+    <div class="hero-copy" data-reveal>
+      <span class="badge" id="modeBadge">طازج من المصنع كل يوم</span>
+      <h1>بن <em>الخليفه</em><br>لبن أصيل من المزرعة إلى كوبك</h1>
+      <p>مصنع لبن بمعايير جودة عالية، وكافيه لبن بوصفات أصيلة بلمسة عصرية. بدون مواد حافظة، وبدون تعقيد.</p>
+      <div class="hero-cta">
+        <a href="#products" class="btn btn-primary">تصفّح المنتجات</a>
+        <a href="#cafe" class="btn btn-ghost">قائمة الكافيه</a>
+      </div>
+      <ul class="hero-points">
+        <li><i class="dot"></i> حليب طازج يومياً</li>
+        <li><i class="dot"></i> مصنع معتمد</li>
+        <li><i class="dot"></i> توصيل سريع</li>
+      </ul>
+    </div>
+    <div class="hero-art" data-reveal>
+      <div class="glass-card">
+        <div class="sheikh"><svg viewBox="0 0 200 260"><use href="#sheikh"/></svg></div>
+        <div class="float-chip c1"><strong>١٠٠٪</strong><span>حليب طبيعي</span></div>
+        <div class="float-chip c2"><strong>٢٤ ساعة</strong><span>من المزرعة للتوصيل</span></div>
+      </div>
+    </div>
+  </div>
+  <div class="ticker"><div class="ticker-track" id="tickerTrack"></div></div>
+</section>
+
+<section class="section" id="about">
+  <div class="container grid-2">
+    <div class="about-media" data-reveal>
+      <div class="media-main">
+        <div class="media-icon"><svg viewBox="0 0 24 24" width="46" height="46" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M3 10.5 12 4l9 6.5V20a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1z"/><path d="M9 21v-7h6v7"/></svg></div>
+        <h3>مصنعنا</h3>
+        <p>خطوط إنتاج حديثة وفق أنظمة سلامة الغذاء.</p>
+      </div>
+      <div class="media-side">
+        <div class="mini-card"><strong>كافيه اللبن</strong><span>وصفات أصيلة… وحلاوة البيت</span></div>
+        <div class="mini-card alt"><strong>منذ ١٩٩٨</strong><span>خبرة أكثر من ربع قرن</span></div>
+      </div>
+    </div>
+    <div class="section-head align-start" data-reveal>
+      <span class="kicker">من نحن</span>
+      <h2>بيت اللبن… <span class="hl">الخليفه</span></h2>
+      <p>بدأنا من مزرعة صغيرة وفكرة واحدة: لبن نظيف وطازج لكل بيت. اليوم بن الخليفه مصنع وكافيه في مكان واحد — ننتج ألباننا بأيدٍ ماهرة ونقدمها بوصفات ورثناها عن جدّنا.</p>
+      <div class="ticks">
+        <div class="tick">✔ بلا مواد حافظة أو ألوان صناعية</div>
+        <div class="tick">✔ تبريد متواصل من المزرعة حتى الرف</div>
+        <div class="tick">✔ مختبر جودة داخل المصنع يومياً</div>
+        <div class="tick">✔ عبوات صديقة للبيئة</div>
+      </div>
+      <a href="#cafe" class="btn btn-primary">شوف منيو الكافيه</a>
+    </div>
+  </div>
+</section>
+
+<section class="section section-alt" id="products">
+  <div class="container">
+    <div class="section-head center" data-reveal>
+      <span class="kicker">منتجاتنا</span>
+      <h2>كل ما يحتاجه بيتك من <span class="hl">الألبان</span></h2>
+      <p id="buyerNote">وضع المشتري: العرض فقط — للطلب ابعتلنا على واتساب.</p>
+    </div>
+    <div class="tabs" data-reveal>
+      <button class="tab active" data-filter="all">الكل</button>
+      <button class="tab" data-filter="milk">ألبان سائلة</button>
+      <button class="tab" data-filter="cheese">أجبان ولبن</button>
+      <button class="tab" data-filter="fresh">طازج ومميز</button>
+    </div>
+    <div class="cards" id="cards"></div>
+  </div>
+</section>
+
+<section class="section" id="cafe">
+  <div class="container grid-2 rev">
+    <div class="section-head align-start" data-reveal>
+      <span class="kicker">كافيه لبن</span>
+      <h2>كافيه <span class="hl">بن الخليفه</span></h2>
+      <p>جلسة دافئة ورائحة قهوة… مشروبات باللبن وأكل محلي على الطريقة الإسكندرانية.</p>
+      <div class="open-hours">
+        <div><span>السبت – الخميس</span><strong>٨ ص – ١٢ م</strong></div>
+        <div><span>الجمعة</span><strong>٢ م – ١٢ م</strong></div>
+      </div>
+      <a href="#contact" class="btn btn-wood">احجز طاولتك</a>
+      <p class="muted sm" id="cafeCount"></p>
+    </div>
+    <div class="menu-list" data-reveal>
+      <h4 class="menu-group">☕ المشروبات والقهوة</h4>
+      <div id="cafeDrinks"></div>
+      <h4 class="menu-group">🍳 الأكل المحلي</h4>
+      <div id="cafeFoods"></div>
+    </div>
+  </div>
+</section>
+
+<section class="section" id="contact">
+  <div class="container grid-2">
+    <div class="section-head align-start" data-reveal>
+      <span class="kicker">تواصل معنا</span>
+      <h2>اطلب أو <span class="hl">زُرنا</span></h2>
+      <p>اطلب توصيل لبيتك، أو احجز طاولة، أو اسأل عن توريد للمحلات والمطاعم.</p>
+      <ul class="contact-list">
+        <li><span class="ci">📍</span><div><strong>المصنع والكافيه</strong><span>Shateaa Abou Youssef, Al Agamy Al Bahri, Dekhela, Alexandria Governorate 5313063</span><span class="plus">Plus Code: 3QV3+7F9</span></div></li>
+        <li><span class="ci">📞</span><div><strong>واتساب / تليفون</strong><a href="tel:+201125138138" dir="ltr">+20 11 25138138</a></div></li>
+        <li><span class="ci">✉️</span><div><strong>البريد</strong><a href="mailto:elkhalifacoffee@gmail.com">elkhalifacoffee@gmail.com</a></div></li>
+      </ul>
+      <div class="map">
+        <iframe title="موقع بن الخليفه" loading="lazy" src="https://maps.google.com/maps?q=3QV3%2B7F9%20Shateaa%20Abou%20Youssef%20Al%20Agamy%20Al%20Bahri%20Dekhela%20Alexandria&z=16&output=embed"></iframe>
+        <a class="map-link" href="https://www.google.com/maps/search/?api=1&query=3QV3%2B7F9%20Shateaa%20Abou%20Youssef%20Al%20Agamy%20Al%20Bahri%20Dekhela%20Alexandria" target="_blank" rel="noopener">افتح في خرائط جوجل</a>
+      </div>
+    </div>
+    <form class="form" id="orderForm" data-reveal novalidate>
+      <div class="row">
+        <label>الاسم بالكامل<input type="text" name="name" placeholder="اسمك" required></label>
+        <label>رقم الهاتف<input type="tel" name="phone" placeholder="01xxxxxxxxx" required></label>
+      </div>
+      <label>نوع الطلب
+        <select name="type">
+          <option>طلب منتجات للمنزل</option>
+          <option>حجز طاولة في الكافيه</option>
+          <option>توريد للمحلات والمطاعم</option>
+          <option>استفسار عام</option>
+        </select>
+      </label>
+      <label>رسالتك<textarea name="msg" rows="4" placeholder="اكتب تفاصيل طلبك هنا…"></textarea></label>
+      <button class="btn btn-primary btn-block" type="submit">إرسال الطلب</button>
+      <p class="form-note" id="formNote"></p>
+    </form>
+  </div>
+</section>
+</main>
+
+<footer class="footer">
+  <div class="container foot-grid">
+    <div class="foot-brand">
+      <span class="logo-text">بن الخليفه<small>مصنع وكافيه لبن</small></span>
+      <p>لبن طازج وأجبان بلدية وكافيه لبن… من المزرعة إلى مائدتك منذ ١٩٩٨.</p>
+      <div class="foot-contact">
+        <a href="tel:+201125138138" dir="ltr">+20 11 25138138</a>
+        <a href="mailto:elkhalifacoffee@gmail.com">elkhalifacoffee@gmail.com</a>
+      </div>
+      <div class="socials">
+        <a href="https://www.facebook.com/elkhalifacoffee" target="_blank" rel="noopener">f</a>
+        <a href="https://www.instagram.com/elkhalifacoffee" target="_blank" rel="noopener">ig</a>
+        <a href="https://www.tiktok.com/@ElKhalifaCoffee" target="_blank" rel="noopener">tk</a>
+      </div>
+    </div>
+    <div class="foot-col"><h5>روابط</h5><a href="#about">من نحن</a><a href="#products">المنتجات</a><a href="#cafe">الكافيه</a></div>
+    <div class="foot-col"><h5>المنتجات</h5><a href="#products">لبن طازج</a><a href="#products">لبنة وجبن</a><a href="#products">قشطة الخليفه</a></div>
+    <div class="foot-col"><h5>ساعات العمل</h5><span>السبت – الخميس: ٨ ص – ١٢ م</span><span>الجمعة: ٢ م – ١٢ م</span><span>التوصيل يومياً حتى ١٠ م</span></div>
+  </div>
+  <div class="container bottom"><span>© <span id="year"></span> بن الخليفه — جميع الحقوق محفوظة.</span><span>صُنع بحبّ في مصر</span></div>
+</footer>
+
+<button class="fab" id="fab">✆</button>
+
+<!-- ===== نافذة إضافة / تعديل صنف ===== -->
+<div class="overlay" id="itemOverlay" hidden>
+  <div class="modal wide">
+    <button class="x" data-close="itemOverlay">✕</button>
+    <h3 id="itemTitle">إضافة صنف جديد</h3>
+    <div class="mrow">
+      <label>اسم الصنف<input id="fName" placeholder="مثال: لاتيه بالحليب الجاموسي"></label>
+      <label>السعر (ج.م)<input id="fPrice" type="number" min="1" placeholder="45"></label>
+    </div>
+    <label>الوصف<input id="fDesc" placeholder="وصف قصير للصنف"></label>
+    <div class="mrow">
+      <label>النوع
+        <select id="fKind">
+          <option value="product">🛍️ منتج مصنع</option>
+          <option value="drink">☕ قهوة / مشروب كافيه</option>
+          <option value="food">🍳 أكل محلي</option>
+        </select>
+      </label>
+      <label>التصنيف (للمنتجات)
+        <select id="fCat">
+          <option value="milk">ألبان سائلة</option>
+          <option value="cheese">أجبان ولبن</option>
+          <option value="fresh">طازج ومميز</option>
+        </select>
+      </label>
+    </div>
+    <label>الوحدة
+      <select id="fUnit">
+        <option>لتر</option><option>علبة</option><option>كوب</option><option>زجاجة</option><option>كجم</option><option>طبق</option><option>كوب كافيه</option>
+      </select>
+    </label>
+    <button class="btn btn-primary btn-block" id="saveItem">حفظ الصنف ✅</button>
+  </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
